@@ -61,13 +61,3 @@ Giao diện được thiết kế đơn giản, thân thiện, phù hợp cho h�
 | pyperclip | Sao chép văn bản |
 
 ---
-
-## 📂 Cấu trúc thư mục
-language-translator/
-│
-├── language_translator.py # File chính chạy ứng dụng
-├── README.md # Tài liệu mô tả dự án
-├── text_to_speech.mp3 # File âm thanh sinh ra (Read Aloud)
-├── resources/
-│ ├── icons/ # Icon giao diện
-│ └── screenshots/ # Ảnh giao diện ứng dụng
