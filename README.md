@@ -21,7 +21,7 @@
 - Nhập văn bản bằng giọng nói
 - Sao chép và xóa nội dung dễ dàng
 
-Giao diện được thiết kế đơn giản, thân thiện, phù hợp cho học tập và sử dụng hằng ngày.
+Giao diện được thiết kế đơn giản, thân thiện, phù hợp cho học tập, demo đồ án và sử dụng hằng ngày.
 
 ---
 
@@ -37,11 +37,12 @@ Giao diện được thiết kế đơn giản, thân thiện, phù hợp cho h�
 
 - 🌐 **Translate**: Dịch văn bản giữa hơn 100 ngôn ngữ
 - 🧠 **Auto Detect**: Tự động nhận diện ngôn ngữ nguồn
+- 🔁 **Swap Language**: Đảo ngược ngôn ngữ nguồn – đích
 - 🔊 **Read Aloud**: Đọc to văn bản đã dịch (Text-to-Speech)
-- 🎙️ **Voice Input**: Nhập văn bản bằng giọng nói (Speech-to-Text)
-- 📋 **Copy**: Sao chép nội dung dịch
-- 🧹 **Clear**: Xóa nội dung nhanh chóng
-- 🖼️ **GUI trực quan**: Giao diện thân thiện, dễ sử dụng
+- 🎙️ **Voice Input**: Nhập văn bản bằng giọng nói (Speech-to-Text – tiếng Anh)
+- 📋 **Copy**: Sao chép nội dung dịch vào clipboard
+- 🧹 **Clear**: Xóa nhanh nội dung nhập và kết quả
+- 🎨 **GUI trực quan**: Giao diện hiện đại, dễ sử dụng
 
 ---
 
@@ -54,12 +55,19 @@ Giao diện được thiết kế đơn giản, thân thiện, phù hợp cho h�
 | googletrans | Kết nối Google Translate API |
 | gTTS | Chuyển văn bản sang giọng nói |
 | SpeechRecognition | Nhận diện giọng nói |
+| PyAudio | Thu âm từ microphone |
+| NumPy | Xử lý tín hiệu âm thanh |
+| Pillow (PIL) | Xử lý hình ảnh |
 | pyperclip | Sao chép văn bản |
 
 ---
 
-## 🚀 Cài đặt & Chạy chương trình
-
-### 1️⃣ Clone repository
-```bash
-git clone https://github.com/Khang226000/language-translator.git
+## 📂 Cấu trúc thư mục
+language-translator/
+│
+├── language_translator.py # File chính chạy ứng dụng
+├── README.md # Tài liệu mô tả dự án
+├── text_to_speech.mp3 # File âm thanh sinh ra (Read Aloud)
+├── resources/
+│ ├── icons/ # Icon giao diện
+│ └── screenshots/ # Ảnh giao diện ứng dụng
