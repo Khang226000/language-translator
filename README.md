@@ -1,94 +1,65 @@
 <h1 align="center">🌍 Language Translator (Desktop Application)</h1>
 
 <p align="center">
-AI-powered language translation desktop app built with Python & Google Translate
+  Ứng dụng dịch ngôn ngữ desktop sử dụng Python & Google Translate API  
 </p>
 
 <p align="center">
-<img src="translator.png" alt="Language Translator UI" width="900"/>
+  <img src="resources/icons/banner.png" alt="Language Translator Banner" width="80%">
 </p>
 
 ---
 
-## 📌 Project Overview
+## 📌 Giới thiệu
 
-**Language Translator** is a **desktop application** developed using **Python (Tkinter)** that allows users to translate text between **multiple languages** using **Google Translate AI**.
+**Language Translator** là một ứng dụng desktop được phát triển bằng **Python (Tkinter)**, cho phép người dùng dịch văn bản giữa hơn **100 ngôn ngữ** một cách nhanh chóng và trực quan.
 
-The system provides a clean and intuitive **graphical user interface** with:
-- Two language selection boxes
-- Input and output text areas
-- One-click translation
-- Voice and audio support
+Ứng dụng tích hợp **Google Translate API** thông qua thư viện `googletrans`, hỗ trợ:
+- Tự động nhận diện ngôn ngữ đầu vào
+- Dịch văn bản theo thời gian thực
+- Chuyển văn bản thành giọng nói
+- Nhập văn bản bằng giọng nói
+- Sao chép và xóa nội dung dễ dàng
 
-This project focuses on **AI integration**, **GUI design**, and **user-friendly interaction**.
-
----
-
-## 🤖 AI Integration (Google Translate)
-
-This system integrates **Artificial Intelligence through Google Translate**:
-
-- AI-powered **automatic language detection**
-- High-quality multilingual translation
-- Real-time translation via `googletrans` library
-
-> Google Translate AI is used as the core translation engine of the system.
+Giao diện được thiết kế đơn giản, thân thiện, phù hợp cho học tập và sử dụng hằng ngày.
 
 ---
 
-## 🖥️ User Interface Description
+## 🖥️ Giao diện ứng dụng
 
-The application interface consists of:
-
-- **Header section**  
-  Displays the title *LANGUAGE TRANSLATOR* with a clean blue theme.
-
-- **Language Selection**
-  - Left combobox: Source language (Auto Detect supported)
-  - Right combobox: Target language
-  - Center swap button to reverse languages
-
-- **Text Areas**
-  - Left: Input text
-  - Right: Translated output text
-
-- **Action Buttons**
-  - **Translate** (main button – emphasized)
-  - Clear
-  - Copy
-  - Read Aloud
-  - Voice Input
+<p align="center">
+  <img src="resources/screenshots/main_ui.png" alt="Application UI" width="85%">
+</p>
 
 ---
 
-## ✨ Features
+## ⚙️ Chức năng chính
 
-- 🌐 Translate text across **100+ languages**
-- 🔍 Auto detect input language
-- 🔊 Read translated text aloud (Text-to-Speech)
-- 🎙️ Voice input using microphone (Speech-to-Text)
-- 📋 Copy translated text to clipboard
-- 🧹 Clear input/output text easily
-- 🎨 Clean pastel-blue GUI (Tkinter)
-
----
-
-## 🛠️ Technologies Used
-
-- Python 3.10
-- Tkinter (GUI)
-- Google Translate AI (`googletrans`)
-- gTTS (Text-to-Speech)
-- SpeechRecognition (Voice Input)
-- PyAudio
-- Pyperclip
-- Pillow (Image handling)
+- 🌐 **Translate**: Dịch văn bản giữa hơn 100 ngôn ngữ
+- 🧠 **Auto Detect**: Tự động nhận diện ngôn ngữ nguồn
+- 🔊 **Read Aloud**: Đọc to văn bản đã dịch (Text-to-Speech)
+- 🎙️ **Voice Input**: Nhập văn bản bằng giọng nói (Speech-to-Text)
+- 📋 **Copy**: Sao chép nội dung dịch
+- 🧹 **Clear**: Xóa nội dung nhanh chóng
+- 🖼️ **GUI trực quan**: Giao diện thân thiện, dễ sử dụng
 
 ---
 
-## ⚙️ Installation & Run
+## 🧠 Công nghệ & Thư viện sử dụng
+
+| Công nghệ | Mô tả |
+|---------|------|
+| Python | Ngôn ngữ lập trình chính |
+| Tkinter | Xây dựng giao diện đồ họa |
+| googletrans | Kết nối Google Translate API |
+| gTTS | Chuyển văn bản sang giọng nói |
+| SpeechRecognition | Nhận diện giọng nói |
+| pyperclip | Sao chép văn bản |
+
+---
+
+## 🚀 Cài đặt & Chạy chương trình
 
 ### 1️⃣ Clone repository
 ```bash
 git clone https://github.com/Khang226000/language-translator.git
-cd language-translator
