@@ -60,4 +60,7 @@ Giao diện được thiết kế đơn giản, thân thiện, phù hợp cho h�
 | Pillow (PIL) | Xử lý hình ảnh |
 | pyperclip | Sao chép văn bản |
 
----
+## Bài báo
+https://thanhnien.vn/ai-dich-thuat-cua-startup-viet-tot-hon-ca-google-chatgpt-185250115142214607.htm
+https://lyluanphebinh.vn/tin-tuc/nghien-cuu-trao-doi/2701/dich-van-hoc-trong-boi-canh-tri-tue-nhan-tao-phat-trien
+https://vnexpress.net/tag/dich-thuat-237504
