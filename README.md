@@ -1,3 +1,4 @@
+Demo app: https://drive.google.com/drive/folders/1gH2ZIfpWoqMZBdc8BMCq7OsECumnk4Pv
 # HỆ THỐNG DỊCH VĂN BẢN (LANGUAGE TRANSLATOR)
 
 ## 1. Giới thiệu
