@@ -222,3 +222,123 @@ Một người dùng có thể gửi nhiều phản hồi.
 7.4 Sơ đồ ERD
 
 <img width="1056" height="549" alt="image" src="https://github.com/user-attachments/assets/9383eae2-37d4-4fb5-a187-8fb7a4be2a64" />
+
+
+# 9. Phân tích API và AI tích hợp trong hệ thống
+
+## 9.1 Tổng quan
+
+- Hệ thống dịch văn bản tích hợp nhiều API và công nghệ AI nhằm nâng cao khả năng xử lý ngôn ngữ tự nhiên, nhận dạng giọng nói và xử lý hình ảnh. Các thành phần này giúp hệ thống hoạt động thông minh, linh hoạt và gần với các ứng dụng thực tế hiện nay.
+
+## 9.2 API dịch ngôn ngữ
+
+- Hệ thống sử dụng thư viện googletrans để thực hiện chức năng dịch văn bản.
+
+Cách hoạt động:
+
+- Gửi văn bản nguồn lên dịch vụ Google Translate
+- Nhận kết quả dịch trả về
+- Hiển thị cho người dùng
+
+Ưu điểm:
+
+- Hỗ trợ nhiều ngôn ngữ
+- Tốc độ xử lý nhanh
+- Độ chính xác cao đối với văn bản phổ thông
+
+Hạn chế:
+
+- Phụ thuộc vào kết nối Internet
+- Có thể bị giới hạn request
+- Không tối ưu cho văn bản chuyên ngành
+  
+## 9.3 AI nhận diện giọng nói (Speech Recognition)
+
+Hệ thống sử dụng thư viện speech_recognition để chuyển giọng nói thành văn bản.
+
+Quy trình xử lý:
+
+- 1.Thu âm từ microphone
+- 2.Gửi dữ liệu âm thanh đến dịch vụ nhận dạng
+- 3.Chuyển đổi thành văn bản
+- 4.Đưa vào hệ thống dịch
+
+Ứng dụng AI:
+
+- Nhận dạng giọng nói dựa trên mô hình học máy
+- Xử lý ngôn ngữ tự nhiên (NLP)
+
+Ưu điểm:
+
+- Tăng tính tiện lợi khi nhập liệu
+- Hỗ trợ người dùng không cần gõ văn bản
+
+Hạn chế:
+
+- Phụ thuộc chất lượng microphone
+- Dễ sai với tiếng ồn hoặc giọng địa phương
+  
+## 9.4 AI chuyển văn bản thành giọng nói (Text-to-Speech)
+
+Hệ thống sử dụng gTTS để chuyển văn bản thành âm thanh.
+
+Cách hoạt động:
+
+- Nhận văn bản đầu vào
+- Gửi đến dịch vụ chuyển đổi giọng nói
+- Trả về file âm thanh (.mp3)
+- Phát cho người dùng
+
+Ứng dụng:
+
+- Hỗ trợ luyện nghe
+- Hỗ trợ phát âm chuẩn
+  
+## 9.5 AI nhận diện văn bản từ hình ảnh (OCR)
+
+Hệ thống sử dụng EasyOCR để trích xuất văn bản từ hình ảnh.
+
+Quy trình:
+
+- 1.Người dùng chọn ảnh
+- 2.Hệ thống phân tích ảnh
+- 3.Nhận diện ký tự trong ảnh
+- 4.Chuyển thành văn bản
+- 5.Thực hiện dịch
+
+Công nghệ sử dụng:
+
+- Deep Learning (CNN)
+- Computer Vision
+
+Ưu điểm:
+
+- Hỗ trợ dịch tài liệu, ảnh chụp
+- Tăng khả năng xử lý đa dạng dữ liệu
+
+Hạn chế:
+
+- Độ chính xác phụ thuộc chất lượng ảnh
+- Khó nhận diện chữ viết tay
+  
+## 9.6 Xử lý đa luồng (Multithreading)
+
+Hệ thống sử dụng threading để xử lý song song:
+
+- Tránh treo giao diện khi gọi API
+- Tăng trải nghiệm người dùng
+- Cho phép thực hiện nhiều tác vụ cùng lúc
+
+9.7 Đánh giá tổng thể
+
+Việc tích hợp API và AI giúp hệ thống đạt được:
+
+- Khả năng xử lý đa phương thức (text, voice, image)
+- Tăng độ tiện lợi và trải nghiệm người dùng
+- Tiệm cận các ứng dụng dịch thuật hiện đại
+
+-> Tuy nhiên, hệ thống vẫn còn phụ thuộc vào:
+
+- 1.Kết nối Internet
+- 2.Dịch vụ bên thứ ba
+- 3.Giới hạn của các mô hình AI có sẵn
