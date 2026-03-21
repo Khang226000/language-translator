@@ -261,11 +261,22 @@ Một người dùng có thể gửi nhiều phản hồi.
   
   pip install pyaudio
 
-## 8.4 Chạy ứng dụng
+## 8.3 Chạy ứng dụng
 
-  - Chạy file chính:
+  - Chạy file chính: python main.py
 
-  python main.py
+## 8.4 Hướng dẫn sử dụng
+
+Sau khi chạy ứng dụng, người dùng có thể:
+
+- Nhập văn bản vào ô nhập → chọn ngôn ngữ → nhấn nút Dịch
+- Nhấn nút Voice để nhập bằng giọng nói
+- Nhấn nút Image để chọn ảnh và dịch nội dung
+- Nhấn nút loa để nghe phát âm
+- Sử dụng các chức năng:
+- Copy kết quả
+- Xóa nội dung
+- Đảo ngôn ngữ
   
 # 9. Phân tích API và AI tích hợp trong hệ thống
 
