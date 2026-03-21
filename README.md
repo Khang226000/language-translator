@@ -186,6 +186,11 @@ USERS – HISTORY:
 USERS – SOCIAL_ACCOUNTS:
 - Một người dùng có thể liên kết nhiều tài khoản mạng xã hội.
 → Quan hệ: 1 - N
+
+7.4 Sơ đồ ERD
+
+<img width="1056" height="549" alt="image" src="https://github.com/user-attachments/assets/9383eae2-37d4-4fb5-a187-8fb7a4be2a64" />
+
 USERS – FEEDBACK:
 Một người dùng có thể gửi nhiều phản hồi.
 → Quan hệ: 1 - N
