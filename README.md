@@ -1,4 +1,4 @@
-Demo app: https://drive.google.com/drive/folders/1gH2ZIfpWoqMZBdc8BMCq7OsECumnk4Pv
+Demo app: [https://drive.google.com/drive/folders/1gH2ZIfpWoqMZBdc8BMCq7OsECumnk4Pv](https://drive.google.com/file/d/1eukH4z5pOY032FbhaBfTaiBbS8gAUDj6/view?usp=sharing)
 # HỆ THỐNG DỊCH VĂN BẢN (LANGUAGE TRANSLATOR)
 
 ## 1. Giới thiệu
@@ -89,20 +89,19 @@ Hệ thống được thiết kế theo mô hình phân lớp nhằm đảm bả
 
 ### 6.1 Mô hình tổng thể
 
-Hệ thống bao gồm 4 lớp chính:
+Hệ thống được thiết kế theo mô hình kiến trúc 3 tầng nhằm đảm bảo tính tổ chức, dễ bảo trì và mở rộng:
 
-Presentation Layer (Giao diện người dùng)
-Xây dựng bằng Tkinter, cho phép người dùng tương tác với hệ thống thông qua các chức năng như nhập văn bản, chọn ngôn ngữ, hiển thị kết quả.
-Business Logic Layer (Xử lý nghiệp vụ)
-Xử lý toàn bộ logic của hệ thống như:
-Xử lý yêu cầu dịch
-Điều phối dữ liệu giữa giao diện và dịch vụ
-Kiểm tra dữ liệu đầu vào
-Service Layer (Dịch vụ bên ngoài)
-Kết nối với các API và thư viện:
-Google Translate (dịch văn bản)
-Speech Recognition (nhận dạng giọng nói)
-EasyOCR (nhận dạng ký tự từ hình ảnh)
+Tầng giao diện (Frontend)
+- Được xây dựng bằng Python Tkinter
+-- Cung cấp giao diện cho người dùng:
+  - Nhập văn bản
+  - Chọn ngôn ngữ
+  - Sử dụng dịch giọng nói
+  - Dịch từ hình ảnh
+  - Hiển thị kết quả dịch
+
+Tầng xử lý (Backend)
+
 Data Layer (Tầng dữ liệu)
 Lưu trữ thông tin người dùng và lịch sử dịch.
 
