@@ -223,7 +223,50 @@ Một người dùng có thể gửi nhiều phản hồi.
 
 <img width="1056" height="549" alt="image" src="https://github.com/user-attachments/assets/9383eae2-37d4-4fb5-a187-8fb7a4be2a64" />
 
+# 8. CÀI ĐẶT VÀ HƯỚNG DẪN SỬ DỤNG
 
+## 8.1 Yêu cầu hệ thống
+
+Để chạy được ứng dụng, cần đảm bảo các yêu cầu sau:
+
+- Hệ điều hành: Windows / Linux / macOS
+- Python phiên bản: >= 3.8
+- Kết nối Internet (bắt buộc cho các chức năng dịch và nhận diện giọng nói)
+- Microphone (đối với chức năng Voice Translate)
+
+## 8.2 Cài đặt môi trường
+
+- Bước 1: Clone repository về máy
+
+  git clone https://github.com/Khang226000/language-translator.git
+  cd language-translator
+
+- Bước 2: Cài đặt thư viện cần thiết
+  
+  pip install -r requirements.txt
+
+  Hoặc cài thủ công:
+  
+  pip install googletrans==4.0.0-rc1
+  
+  pip install speechrecognition
+  
+  pip install gtts
+  
+  pip install easyocr
+  
+  pip install pillow
+  
+  pip install opencv-python
+  
+  pip install pyaudio
+
+## 8.4 Chạy ứng dụng
+
+  - Chạy file chính:
+
+  python main.py
+  
 # 9. Phân tích API và AI tích hợp trong hệ thống
 
 ## 9.1 Tổng quan
