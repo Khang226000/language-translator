@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+
+venv/
+env/
+
+.vscode/
+.idea/
+
+*.log
+*.db
+
+.env
+
+client_secret.json
+credentials.json
