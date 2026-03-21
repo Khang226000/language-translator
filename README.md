@@ -1,4 +1,5 @@
 VIDEO Chạy Demo App em để ở đây:
+
 Demo app: [https://drive.google.com/drive/folders/1gH2ZIfpWoqMZBdc8BMCq7OsECumnk4Pv](https://drive.google.com/file/d/1eukH4z5pOY032FbhaBfTaiBbS8gAUDj6/view?usp=sharing)
 
 # HỆ THỐNG DỊCH VĂN BẢN (LANGUAGE TRANSLATOR)
