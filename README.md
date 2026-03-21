@@ -133,11 +133,12 @@ Hệ thống sử dụng cơ sở dữ liệu để lưu trữ thông tin ngư�
 
 Hệ thống bao gồm các bảng chính sau:
 
-USERS: Lưu thông tin người dùng
-ROLES: Lưu vai trò (Admin, User)
-HISTORY: Lưu lịch sử dịch
-SOCIAL_ACCOUNTS: Lưu thông tin đăng nhập mạng xã hội
-FEEDBACK: Lưu phản hồi từ người dùng
+- USERS: Lưu thông tin người dùng
+- ROLES: Lưu vai trò (Admin, User)
+- HISTORY: Lưu lịch sử dịch
+- SOCIAL_ACCOUNTS: Lưu thông tin đăng nhập mạng xã hội
+- EEDBACK: Lưu phản hồi từ người dùng
+
 7.2 Mô tả chi tiết các bảng
 
 USERS
