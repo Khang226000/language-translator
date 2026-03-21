@@ -120,16 +120,21 @@ Lưu trữ thông tin người dùng và lịch sử dịch.
 <img width="1057" height="692" alt="image" src="https://github.com/user-attachments/assets/cc00aa5c-6691-4a0b-af49-ce0107a6c135" />
 
 Dịch văn bản
+
   - 1.Người dùng nhập văn bản
   - 2.Chọn ngôn ngữ nguồn và đích
   - 3.Hệ thống gửi yêu cầu đến API dịch
   - 4.Nhận kết quả và hiển thị
+  - 
 Dịch giọng nói
+
   - 1.Thu âm từ microphone
   - 2.Chuyển giọng nói thành văn bản
   - 3.Gửi văn bản đi dịch
   - 4.Hiển thị và đọc kết quả
+  - 
 Dịch hình ảnh
+
   - 1.Người dùng chọn ảnh
   - 2.OCR trích xuất văn bản
   - 3.Gửi nội dung đi dịch
