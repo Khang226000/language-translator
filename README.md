@@ -174,14 +174,17 @@ FEEDBACK
 - created_at (DATETIME)
 
 7.3 Mối quan hệ giữa các bảng
+
 USERS – ROLES:
-Một vai trò có thể được gán cho nhiều người dùng, mỗi người dùng chỉ có một vai trò.
+- Một vai trò có thể được gán cho nhiều người dùng, mỗi người dùng chỉ có một vai trò.
 → Quan hệ: 1 - N
+
 USERS – HISTORY:
-Một người dùng có thể có nhiều lịch sử dịch, mỗi lịch sử thuộc về một người dùng.
+- Một người dùng có thể có nhiều lịch sử dịch, mỗi lịch sử thuộc về một người dùng.
 → Quan hệ: 1 - N
+
 USERS – SOCIAL_ACCOUNTS:
-Một người dùng có thể liên kết nhiều tài khoản mạng xã hội.
+- Một người dùng có thể liên kết nhiều tài khoản mạng xã hội.
 → Quan hệ: 1 - N
 USERS – FEEDBACK:
 Một người dùng có thể gửi nhiều phản hồi.
