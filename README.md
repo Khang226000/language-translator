@@ -1,4 +1,6 @@
+VIDEO Chạy Demo App em để ở đây:
 Demo app: [https://drive.google.com/drive/folders/1gH2ZIfpWoqMZBdc8BMCq7OsECumnk4Pv](https://drive.google.com/file/d/1eukH4z5pOY032FbhaBfTaiBbS8gAUDj6/view?usp=sharing)
+
 # HỆ THỐNG DỊCH VĂN BẢN (LANGUAGE TRANSLATOR)
 
 ## 1. Giới thiệu
@@ -149,6 +151,7 @@ Ví dụ quy trình xử lý dịch:
 - 5.Hiển thị kết quả lên giao diện
 - 6.(Tùy chọn) Phát âm nội dung đã dịch
 
+6.3 
 7. Thiết kế cơ sở dữ liệu
 
 Hệ thống sử dụng cơ sở dữ liệu để lưu trữ thông tin người dùng, lịch sử dịch, phân quyền và các dữ liệu liên quan. Thiết kế cơ sở dữ liệu đảm bảo tính toàn vẹn, dễ mở rộng và phù hợp với mô hình ứng dụng.
