@@ -101,8 +101,19 @@ Tầng giao diện (Frontend)
   - Hiển thị kết quả dịch
 
 Tầng xử lý (Backend)
+- Xử lý toàn bộ logic nghiệp vụ của hệ thống, bao gồm:
+  - Gọi API dịch bằng thư viện googletrans
+  - Nhận diện giọng nói bằng speech_recognition
+  - Chuyển văn bản thành giọng nói bằng gTTS
+  - Nhận diện ký tự từ hình ảnh bằng EasyOCR
+  - Xử lý đa luồng với threading để tránh treo giao diện
 
-Data Layer (Tầng dữ liệu)
+Tầng dữ liệu (Database)
+- Sử dụng SQLite để lưu trữ dữ liệu:
+  - Thông tin người dùng
+  - Lịch sử dịch
+  - Phản hồi và đánh giá
+
 Lưu trữ thông tin người dùng và lịch sử dịch.
 
 ### 6.2 Luồng xử lý hệ thống
@@ -123,6 +134,15 @@ Dịch hình ảnh
   - 2.OCR trích xuất văn bản
   - 3.Gửi nội dung đi dịch
   - 4.Hiển thị kết quả
+
+Ví dụ quy trình xử lý dịch:
+
+- 1.Người dùng nhập văn bản hoặc chọn chức năng "Voice Translate"
+- 2.Hệ thống tiếp nhận dữ liệu đầu vào (văn bản hoặc giọng nói)
+- 3.Thực hiện xử lý và dịch sang ngôn ngữ đích
+- 4.Lưu kết quả vào cơ sở dữ liệu
+- 5.Hiển thị kết quả lên giao diện
+- 6.(Tùy chọn) Phát âm nội dung đã dịch
 
 7. Thiết kế cơ sở dữ liệu
 
