@@ -127,63 +127,57 @@ Dịch hình ảnh
 
 7. Thiết kế cơ sở dữ liệu
 
-Hệ thống sử dụng cơ sở dữ liệu để quản lý thông tin người dùng và lưu trữ lịch sử dịch. Việc thiết kế cơ sở dữ liệu đảm bảo tính nhất quán, dễ mở rộng và hỗ trợ tốt cho các chức năng của hệ thống.
+Hệ thống sử dụng cơ sở dữ liệu để lưu trữ thông tin người dùng, lịch sử dịch, phân quyền và các dữ liệu liên quan. Thiết kế cơ sở dữ liệu đảm bảo tính toàn vẹn, dễ mở rộng và phù hợp với mô hình ứng dụng.
 
-7.1 Bảng Users
+7.1 Danh sách các bảng
 
+Hệ thống bao gồm các bảng chính sau:
 
-<img width="651" height="744" alt="image" src="https://github.com/user-attachments/assets/b0cc4c1b-fcd0-40ff-a3b6-eb08cce5fa75" />
-
-Bảng này dùng để lưu trữ thông tin tài khoản người dùng.
-
-
-7.2 Bảng Translation_History
-
-<img width="645" height="308" alt="image" src="https://github.com/user-attachments/assets/99095c5a-53f1-4780-abd2-c6ca08c12a98" />
-
-Bảng này lưu trữ toàn bộ lịch sử dịch của người dùng.
-
-7.3 Bảng SOCIAL_ACCOUNTS
-
-<img width="653" height="520" alt="image" src="https://github.com/user-attachments/assets/749dbc3c-2296-4873-9644-56dae5c5c3ed" />
-
-Bảng này dùng để lưu phương thức đăng nhập của người dùng.
-
-7.4 Bảng ROLES
-
-<img width="653" height="145" alt="image" src="https://github.com/user-attachments/assets/b26f1ec9-4d73-4a40-b1e3-c5f7836ee4ad" />
-
-Bảng này dùng để lưu vai trò người dùng.
-
-7.5 Bảng FEEDBACK
-
-<img width="644" height="190" alt="image" src="https://github.com/user-attachments/assets/09e4bb51-4d62-4085-8655-8cbf6d6049ce" />
-
-Bảng này dùng để lưu trữ phản hồi của người dùng
-
-7.6 Mối quan hệ giữa các bảng
-
-1. USERS – ROLES
-Một vai trò có thể được gán cho nhiều người dùng
-Một người dùng chỉ có một vai trò
-
-Mối quan hệ: 1 - N (One to Many)
-
-2. USERS – HISTORY
-Một người dùng có thể có nhiều lịch sử dịch
-Mỗi lịch sử dịch chỉ thuộc về một người dùng
-
-Mối quan hệ: 1 - N (One to Many)
-
-3. USERS – SOCIAL_ACCOUNTS
-Một người dùng có thể liên kết nhiều tài khoản mạng xã hội
-Mỗi tài khoản mạng xã hội chỉ thuộc về một người dùng
-
-Mối quan hệ: 1 - N (One to Many)
-
-4. USERS – FEEDBACK
-Một người dùng có thể gửi nhiều phản hồi
-Mỗi phản hồi thuộc về một người dùng
-
-Mối quan hệ: 1 - N (One to Many)
+USERS: Lưu thông tin người dùng
+ROLES: Lưu vai trò (Admin, User)
+HISTORY: Lưu lịch sử dịch
+SOCIAL_ACCOUNTS: Lưu thông tin đăng nhập mạng xã hội
+FEEDBACK: Lưu phản hồi từ người dùng
+7.2 Mô tả chi tiết các bảng
+USERS
+id (INTEGER, PRIMARY KEY)
+username (TEXT)
+password (TEXT)
+email (TEXT)
+role_id (INTEGER, FOREIGN KEY)
+created_at (DATETIME)
+ROLES
+id (INTEGER, PRIMARY KEY)
+role_name (TEXT)
+HISTORY
+id (INTEGER, PRIMARY KEY)
+user_id (INTEGER, FOREIGN KEY)
+source_text (TEXT)
+translated_text (TEXT)
+source_lang (TEXT)
+target_lang (TEXT)
+created_at (DATETIME)
+SOCIAL_ACCOUNTS
+id (INTEGER, PRIMARY KEY)
+user_id (INTEGER, FOREIGN KEY)
+provider (TEXT)
+provider_user_id (TEXT)
+FEEDBACK
+id (INTEGER, PRIMARY KEY)
+user_id (INTEGER, FOREIGN KEY)
+content (TEXT)
+created_at (DATETIME)
+7.3 Mối quan hệ giữa các bảng
+USERS – ROLES:
+Một vai trò có thể được gán cho nhiều người dùng, mỗi người dùng chỉ có một vai trò.
+→ Quan hệ: 1 - N
+USERS – HISTORY:
+Một người dùng có thể có nhiều lịch sử dịch, mỗi lịch sử thuộc về một người dùng.
+→ Quan hệ: 1 - N
+USERS – SOCIAL_ACCOUNTS:
+Một người dùng có thể liên kết nhiều tài khoản mạng xã hội.
+→ Quan hệ: 1 - N
+USERS – FEEDBACK:
+Một người dùng có thể gửi nhiều phản hồi.
+→ Quan hệ: 1 - N
 
