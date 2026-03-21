@@ -151,7 +151,8 @@ USERS
 - ROLES
 - id (INTEGER, PRIMARY KEY)
 - role_name (TEXT)
-- HISTORY
+  
+HISTORY
 - id (INTEGER, PRIMARY KEY)
 - user_id (INTEGER, FOREIGN KEY)
 - source_text (TEXT)
