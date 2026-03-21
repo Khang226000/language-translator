@@ -139,34 +139,38 @@ HISTORY: Lưu lịch sử dịch
 SOCIAL_ACCOUNTS: Lưu thông tin đăng nhập mạng xã hội
 FEEDBACK: Lưu phản hồi từ người dùng
 7.2 Mô tả chi tiết các bảng
+
 USERS
-id (INTEGER, PRIMARY KEY)
-username (TEXT)
-password (TEXT)
-email (TEXT)
-role_id (INTEGER, FOREIGN KEY)
-created_at (DATETIME)
-ROLES
-id (INTEGER, PRIMARY KEY)
-role_name (TEXT)
-HISTORY
-id (INTEGER, PRIMARY KEY)
-user_id (INTEGER, FOREIGN KEY)
-source_text (TEXT)
-translated_text (TEXT)
-source_lang (TEXT)
-target_lang (TEXT)
-created_at (DATETIME)
+- id (INTEGER, PRIMARY KEY)
+- username (TEXT)
+- password (TEXT)
+- email (TEXT)
+- role_id (INTEGER, FOREIGN KEY)
+- created_at (DATETIME)
+- ROLES
+- id (INTEGER, PRIMARY KEY)
+- role_name (TEXT)
+- HISTORY
+- id (INTEGER, PRIMARY KEY)
+- user_id (INTEGER, FOREIGN KEY)
+- source_text (TEXT)
+- translated_text (TEXT)
+- source_lang (TEXT)
+- target_lang (TEXT)
+- created_at (DATETIME)
+  
 SOCIAL_ACCOUNTS
-id (INTEGER, PRIMARY KEY)
-user_id (INTEGER, FOREIGN KEY)
-provider (TEXT)
-provider_user_id (TEXT)
+- id (INTEGER, PRIMARY KEY)
+- user_id (INTEGER, FOREIGN KEY)
+- provider (TEXT)
+- provider_user_id (TEXT)
+  
 FEEDBACK
-id (INTEGER, PRIMARY KEY)
-user_id (INTEGER, FOREIGN KEY)
-content (TEXT)
-created_at (DATETIME)
+- id (INTEGER, PRIMARY KEY)
+- user_id (INTEGER, FOREIGN KEY)
+- content (TEXT)
+- created_at (DATETIME)
+
 7.3 Mối quan hệ giữa các bảng
 USERS – ROLES:
 Một vai trò có thể được gán cho nhiều người dùng, mỗi người dùng chỉ có một vai trò.
