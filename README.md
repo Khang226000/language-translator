@@ -7,6 +7,9 @@ Em cập nhật lại tài khoản hệ thống là:
 
 ## User: Ken / 111111
 ## Admin: KKK / 123456
+
+
+
 # HỆ THỐNG DỊCH VĂN BẢN (LANGUAGE TRANSLATOR)
 
 ## 1. Giới thiệu
