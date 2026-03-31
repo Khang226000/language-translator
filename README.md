@@ -5,8 +5,9 @@ Demo app: [https://drive.google.com/drive/folders/1gH2ZIfpWoqMZBdc8BMCq7OsECumnk
 
 Em cập nhật lại tài khoản hệ thống là: 
 
-## User: Ken / 111111
-## Admin: KKK / 123456
+ User: Ken / 111111
+ 
+ Admin: KKK / 123456
 
 
 
